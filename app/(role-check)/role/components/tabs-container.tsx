@@ -24,7 +24,9 @@ export const TabsContainer = () => {
   const onConfirmed = () => {
     router.push("/student")
   }
-
+  const onAdminConfirmed = () => {
+    router.push("/admin")
+  }
   return (
     <Tabs defaultValue="student" className="mx-auto">
       <TabsList className="grid w-full grid-cols-2">
@@ -86,7 +88,11 @@ export const TabsContainer = () => {
             </div>
           </CardContent>
           <CardFooter>
-            <Button>Save password</Button>
+            <Button
+              onClick={onAdminConfirmed}
+            >
+              Confirm
+            </Button>
           </CardFooter>
         </Card>
       </TabsContent>
