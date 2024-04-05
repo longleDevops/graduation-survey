@@ -1,6 +1,6 @@
 export const Chart = () => {
   return (
-    <div>
+    <div className="w-[300px] h-[250px] border ">
 
     </div>
   )
